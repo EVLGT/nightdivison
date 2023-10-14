@@ -81,7 +81,7 @@ a:hover {
     margin: 20px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    text-align: center; 
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,4 +104,28 @@ a:hover {
     width: 100px;
     height: 100px;
     margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    h1, h2 {
+        font-size: 24px;
+    }
+    li img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .collective-artists {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .artist-name, .artist-role {
+        text-align: center;
+    }
 }
